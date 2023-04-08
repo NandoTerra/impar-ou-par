@@ -1,0 +1,15 @@
+import java.util.Scanner; // entou importando a classe Scanner
+public class atividade2_java { // declarando a classe publica atividade2
+
+	public static void main(String[] args) { // o modificador de acesso precisa ser publico para que o JRE possa acessar e executar esse metodo(main)Void é o tipo de retorno do metodo java porque não retorna nada , o metodo java main aceita um unico argumento do tipo String array.
+		Scanner sc = new Scanner(System.in); // Oobjeto entrada será então utilizado para receber o que for digitado no teclado pelo usuario durante a execução do programa e enviar eses dados a uma variavel
+		int N = sc.nextInt(); // aqui está sendo declarado o tipo e a variavel sendo que o valor imputado a variavel será digitado pelo usuario atraves do sc.nextInt() 
+	    
+		if (N % 2 == 0) { // condicional (SE) e formula de atribuição afirmada como verdadeira
+			System.out.println("PAR"); // apos indentar foi dado o comandosera e sera impresso na tela caso o numero digitado pelo usuario seja verdadeiro (par)
+		}
+		else { // condicional ( se não ) caso o numero digitado pelo usuario seja considerado falso
+			System.out.println("IMPAR"); // houve indentação e será impresso o nome (impar)
+		}
+
+		sc.close(); // está fechando a classe scanner.
